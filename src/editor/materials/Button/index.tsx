@@ -6,11 +6,12 @@ import {type ButtonType} from "antd/es/button";
 export interface ButtonProps {
     type: ButtonType
     text: string
+    id: number
 }
 
-function Button({type, text}: ButtonProps) {
+function Button({type, text, id}: ButtonProps) {
     return (
-        <AntdButton type={type}>{text}</AntdButton>
+        <AntdButton type={type} data-component-id={id}>{text}</AntdButton>
     );
 }
 

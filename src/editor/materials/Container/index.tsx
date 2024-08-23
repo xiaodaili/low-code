@@ -13,6 +13,7 @@ function Container({children, id, name}: ContainerProps) {
     return (
         <div ref={drop}
              className='border-[1px] border-[#000] p-[20px] min-h-[100px]:'
+             data-component-id={id}
         >
             {children}
         </div>
